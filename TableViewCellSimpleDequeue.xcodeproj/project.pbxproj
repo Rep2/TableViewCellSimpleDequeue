@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		F65481B02183583E0010A15D /* TableViewCellSimpleDequeue.h in Headers */ = {isa = PBXBuildFile; fileRef = F65481AE2183583E0010A15D /* TableViewCellSimpleDequeue.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F65481B7218358560010A15D /* UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65481B6218358560010A15D /* UITableView.swift */; };
+		F65481D421835ACC0010A15D /* CellSource.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F65481D321835ACC0010A15D /* CellSource.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -16,6 +17,7 @@
 		F65481AE2183583E0010A15D /* TableViewCellSimpleDequeue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewCellSimpleDequeue.h; sourceTree = "<group>"; };
 		F65481AF2183583E0010A15D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F65481B6218358560010A15D /* UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableView.swift; sourceTree = "<group>"; };
+		F65481D321835ACC0010A15D /* CellSource.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CellSource.framework; path = Carthage/Build/iOS/CellSource.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -23,6 +25,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F65481D421835ACC0010A15D /* CellSource.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -34,6 +37,7 @@
 			children = (
 				F65481AD2183583E0010A15D /* TableViewCellSimpleDequeue */,
 				F65481AC2183583E0010A15D /* Products */,
+				F65481D221835ACC0010A15D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -53,6 +57,14 @@
 				F65481B6218358560010A15D /* UITableView.swift */,
 			);
 			path = TableViewCellSimpleDequeue;
+			sourceTree = "<group>";
+		};
+		F65481D221835ACC0010A15D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F65481D321835ACC0010A15D /* CellSource.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,6 +89,8 @@
 				F65481A72183583E0010A15D /* Sources */,
 				F65481A82183583E0010A15D /* Frameworks */,
 				F65481A92183583E0010A15D /* Resources */,
+				F65481D021835A8E0010A15D /* Swiftlint */,
+				F65481D121835A990010A15D /* Carthage */,
 			);
 			buildRules = (
 			);
@@ -128,6 +142,46 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F65481D021835A8E0010A15D /* Swiftlint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Swiftlint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+		F65481D121835A990010A15D /* Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/CellSource.framework",
+			);
+			name = Carthage;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F65481A72183583E0010A15D /* Sources */ = {
@@ -274,6 +328,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = TableViewCellSimpleDequeue/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -301,6 +359,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = TableViewCellSimpleDequeue/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (

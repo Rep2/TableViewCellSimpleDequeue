@@ -1,0 +1,3 @@
+[submodule "Carthage/Checkouts/CellSource"]
+	path = Carthage/Checkouts/CellSource
+	url = https://github.com/Rep2/CellSource.git
