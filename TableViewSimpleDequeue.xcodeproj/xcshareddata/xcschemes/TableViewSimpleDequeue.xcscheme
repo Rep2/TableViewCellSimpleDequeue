@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "F65481AA2183583E0010A15D"
-               BuildableName = "TableViewCellSimpleDequeue.framework"
-               BlueprintName = "TableViewCellSimpleDequeue"
-               ReferencedContainer = "container:TableViewCellSimpleDequeue.xcodeproj">
+               BuildableName = "TableViewSimpleDequeue.framework"
+               BlueprintName = "TableViewSimpleDequeue"
+               ReferencedContainer = "container:TableViewSimpleDequeue.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -46,9 +46,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F65481AA2183583E0010A15D"
-            BuildableName = "TableViewCellSimpleDequeue.framework"
-            BlueprintName = "TableViewCellSimpleDequeue"
-            ReferencedContainer = "container:TableViewCellSimpleDequeue.xcodeproj">
+            BuildableName = "TableViewSimpleDequeue.framework"
+            BlueprintName = "TableViewSimpleDequeue"
+            ReferencedContainer = "container:TableViewSimpleDequeue.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -64,9 +64,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F65481AA2183583E0010A15D"
-            BuildableName = "TableViewCellSimpleDequeue.framework"
-            BlueprintName = "TableViewCellSimpleDequeue"
-            ReferencedContainer = "container:TableViewCellSimpleDequeue.xcodeproj">
+            BuildableName = "TableViewSimpleDequeue.framework"
+            BlueprintName = "TableViewSimpleDequeue"
+            ReferencedContainer = "container:TableViewSimpleDequeue.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>
