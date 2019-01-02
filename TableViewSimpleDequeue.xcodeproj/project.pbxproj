@@ -9,20 +9,39 @@
 /* Begin PBXBuildFile section */
 		F65481B02183583E0010A15D /* TableViewCellSimpleDequeue.h in Headers */ = {isa = PBXBuildFile; fileRef = F65481AE2183583E0010A15D /* TableViewCellSimpleDequeue.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F65481B7218358560010A15D /* UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65481B6218358560010A15D /* UITableView.swift */; };
+		F67DD6DD21DD73C000EB7F36 /* CellSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67DD6C221DD736500EB7F36 /* CellSource.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F67DD6DE21DD742500EB7F36 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F65481A22183583E0010A15D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F67DD6D421DD73A000EB7F36;
+			remoteInfo = CellSource;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		F65481AB2183583E0010A15D /* TableViewSimpleDequeue.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TableViewSimpleDequeue.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F65481AE2183583E0010A15D /* TableViewCellSimpleDequeue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewCellSimpleDequeue.h; sourceTree = "<group>"; };
 		F65481AF2183583E0010A15D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F65481B6218358560010A15D /* UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableView.swift; sourceTree = "<group>"; };
-		F68AE65321DD6DDC00873C77 /* CellSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellSource.swift; sourceTree = "<group>"; };
-		F68AE65421DD6DDC00873C77 /* CellSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellSource.h; sourceTree = "<group>"; };
-		F68AE65521DD6DDC00873C77 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F67DD6C221DD736500EB7F36 /* CellSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellSource.swift; sourceTree = "<group>"; };
+		F67DD6C321DD736500EB7F36 /* CellSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellSource.h; sourceTree = "<group>"; };
+		F67DD6C421DD736500EB7F36 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F67DD6D521DD73A000EB7F36 /* CellSource.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CellSource.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		F65481A82183583E0010A15D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F67DD6D221DD73A000EB7F36 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -35,7 +54,7 @@
 		F65481A12183583E0010A15D = {
 			isa = PBXGroup;
 			children = (
-				F68AE65121DD6DDC00873C77 /* CellSource */,
+				F67DD6C021DD736500EB7F36 /* CellSource */,
 				F65481AD2183583E0010A15D /* TableViewSimpleDequeue */,
 				F65481AC2183583E0010A15D /* Products */,
 				F65481D221835ACC0010A15D /* Frameworks */,
@@ -46,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				F65481AB2183583E0010A15D /* TableViewSimpleDequeue.framework */,
+				F67DD6D521DD73A000EB7F36 /* CellSource.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,20 +87,20 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		F68AE65121DD6DDC00873C77 /* CellSource */ = {
+		F67DD6C021DD736500EB7F36 /* CellSource */ = {
 			isa = PBXGroup;
 			children = (
-				F68AE65221DD6DDC00873C77 /* CellSource */,
+				F67DD6C121DD736500EB7F36 /* CellSource */,
 			);
 			path = CellSource;
 			sourceTree = "<group>";
 		};
-		F68AE65221DD6DDC00873C77 /* CellSource */ = {
+		F67DD6C121DD736500EB7F36 /* CellSource */ = {
 			isa = PBXGroup;
 			children = (
-				F68AE65321DD6DDC00873C77 /* CellSource.swift */,
-				F68AE65421DD6DDC00873C77 /* CellSource.h */,
-				F68AE65521DD6DDC00873C77 /* Info.plist */,
+				F67DD6C221DD736500EB7F36 /* CellSource.swift */,
+				F67DD6C321DD736500EB7F36 /* CellSource.h */,
+				F67DD6C421DD736500EB7F36 /* Info.plist */,
 			);
 			path = CellSource;
 			sourceTree = "<group>";
@@ -93,6 +113,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				F65481B02183583E0010A15D /* TableViewCellSimpleDequeue.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F67DD6D021DD73A000EB7F36 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,10 +139,29 @@
 			buildRules = (
 			);
 			dependencies = (
+				F67DD6DF21DD742500EB7F36 /* PBXTargetDependency */,
 			);
 			name = TableViewSimpleDequeue;
 			productName = TableViewCellSimpleDequeue;
 			productReference = F65481AB2183583E0010A15D /* TableViewSimpleDequeue.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F67DD6D421DD73A000EB7F36 /* CellSource */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F67DD6DA21DD73A100EB7F36 /* Build configuration list for PBXNativeTarget "CellSource" */;
+			buildPhases = (
+				F67DD6D021DD73A000EB7F36 /* Headers */,
+				F67DD6D121DD73A000EB7F36 /* Sources */,
+				F67DD6D221DD73A000EB7F36 /* Frameworks */,
+				F67DD6D321DD73A000EB7F36 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CellSource;
+			productName = CellSource;
+			productReference = F67DD6D521DD73A000EB7F36 /* CellSource.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -130,6 +176,9 @@
 					F65481AA2183583E0010A15D = {
 						CreatedOnToolsVersion = 10.0;
 						LastSwiftMigration = 1000;
+					};
+					F67DD6D421DD73A000EB7F36 = {
+						CreatedOnToolsVersion = 10.1;
 					};
 				};
 			};
@@ -146,12 +195,20 @@
 			projectRoot = "";
 			targets = (
 				F65481AA2183583E0010A15D /* TableViewSimpleDequeue */,
+				F67DD6D421DD73A000EB7F36 /* CellSource */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		F65481A92183583E0010A15D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F67DD6D321DD73A000EB7F36 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -190,7 +247,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F67DD6D121DD73A000EB7F36 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F67DD6DD21DD73C000EB7F36 /* CellSource.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F67DD6DF21DD742500EB7F36 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F67DD6D421DD73A000EB7F36 /* CellSource */;
+			targetProxy = F67DD6DE21DD742500EB7F36 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		F65481B12183583E0010A15D /* Debug */ = {
@@ -374,6 +447,58 @@
 			};
 			name = Release;
 		};
+		F67DD6DB21DD73A100EB7F36 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = MDX989Y6D8;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = CellSource/CellSource/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rep.CellSource;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F67DD6DC21DD73A100EB7F36 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = MDX989Y6D8;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = CellSource/CellSource/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rep.CellSource;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -391,6 +516,15 @@
 			buildConfigurations = (
 				F65481B42183583E0010A15D /* Debug */,
 				F65481B52183583E0010A15D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F67DD6DA21DD73A100EB7F36 /* Build configuration list for PBXNativeTarget "CellSource" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F67DD6DB21DD73A100EB7F36 /* Debug */,
+				F67DD6DC21DD73A100EB7F36 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
